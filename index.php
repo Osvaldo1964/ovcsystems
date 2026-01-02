@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="OVCSYSTEMS SAS - Asesoría en sistemas, desarrollo web y aplicaciones móviles. Soluciones tecnológicas integrales.">
     <title>OVCSYSTEMS SAS | Soluciones Tecnológicas</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
 
     <!-- Navigation -->
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">OVC<span>SYSTEMS</span></a>
-            
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
             <nav class="nav-links">
                 <a href="#inicio">Inicio</a>
                 <a href="#servicios">Servicios</a>
@@ -57,7 +65,7 @@
                 <h2>Soluciones Integrales</h2>
                 <p>Todo lo que necesitas para potenciar tu presencia digital</p>
             </div>
-            
+
             <div class="services-grid">
                 <!-- Website Development -->
                 <div class="service-card">
@@ -114,7 +122,7 @@
                     <h2>Innovación y Experiencia a tu Servicio</h2>
                     <p>Somos <strong>OVCSYSTEMS SAS</strong>, una empresa dedicada a impulsar el crecimiento tecnológico de nuestros clientes. Nos especializamos en traducir necesidades complejas en soluciones digitales efectivas.</p>
                     <p>Con un enfoque en la calidad, la seguridad y el diseño funcional, acompaño a empresas y emprendedores en su camino hacia la digitalización total.</p>
-                    
+
                     <div class="about-stats">
                         <div class="stat-item">
                             <h4>+10</h4>
@@ -137,7 +145,7 @@
                 <span class="section-tag">Preguntas Frecuentes</span>
                 <h2>Resolvemos tus Dudas</h2>
             </div>
-            
+
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">¿Qué tipo de proyectos realizan?</div>
@@ -145,14 +153,14 @@
                         <p>Realizamos desde sitios web corporativos (Landing Pages) hasta sistemas complejos de gestión (ERP/CRM) y aplicaciones móviles personalizadas.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question">¿Ofrecen soporte post-desarrollo?</div>
                     <div class="faq-answer">
                         <p>Sí, todos nuestros proyectos incluyen un periodo de garantía y ofrecemos planes de mantenimiento mensual para asegurar que tu plataforma siempre esté actualizada y segura.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question">¿Cómo solicito una cotización?</div>
                     <div class="faq-answer">
@@ -178,19 +186,19 @@
                 <h2>Inicia tu Proyecto Hoy</h2>
                 <p style="color: rgba(255,255,255,0.8);">Déjanos tus datos y te contactaremos para una asesoría gratuita.</p>
             </div>
-            
+
             <div class="contact-container">
                 <form class="contact-form" action="#" method="POST">
                     <div class="form-group">
                         <label for="name">Nombre Completo</label>
                         <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email">Correo Electrónico</label>
                         <input type="email" id="email" name="email" class="form-control" placeholder="tucorreo@ejemplo.com" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="type">Tipo de Solicitud</label>
                         <select id="type" name="type" class="form-control">
@@ -200,12 +208,12 @@
                             <option value="otro">Otro</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="message">Mensaje</label>
                         <textarea id="message" name="message" class="form-control" rows="4" placeholder="Cuéntanos más sobre tu proyecto..." required></textarea>
                     </div>
-                    
+
                     <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
                 </form>
             </div>
@@ -220,7 +228,7 @@
                     <h3>OVC<span>SYSTEMS</span></h3>
                     <p>Tecnología al servicio de tus ideas.</p>
                 </div>
-                
+
                 <div class="footer-links">
                     <h4>Enlaces Rápidos</h4>
                     <ul>
@@ -229,7 +237,7 @@
                         <li><a href="#nosotros">Nosotros</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
@@ -237,7 +245,7 @@
                         <li><a href="#">Términos y Condiciones</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-links">
                     <h4>Admin</h4>
                     <ul>
@@ -245,7 +253,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="copyright">
                 <p>&copy; <?php echo date('Y'); ?> OVCSYSTEMS SAS. Todos los derechos reservados.</p>
             </div>
@@ -255,6 +263,8 @@
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-   
+ 
+ 
  

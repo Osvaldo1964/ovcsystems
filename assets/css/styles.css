@@ -467,8 +467,28 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Mobile Navigation */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-blue);
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 0 20px;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -477,8 +497,49 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    /* Mobile Menu Logic */
+    .menu-toggle {
+        display: flex;
+        z-index: 1001;
+    }
+
     .nav-links {
-        display: none;
-        /* simple mobile hide for now, would add hamburger later if needed */
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Hidden by default */
+        width: 70%;
+        height: 100vh;
+        background-color: var(--white);
+        padding-top: 100px;
+        transition: 0.4s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+        /* Visible */
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        color: var(--primary-blue);
+    }
+
+    /* Hamburger Animation */
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 }
