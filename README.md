@@ -3,7 +3,9 @@
 Este repositorio contiene el código fuente del sitio web oficial de **OVCSYSTEMS SAS**.
 
 ## Descripción
-Sitio web profesional diseñado con una estética minimalista y paleta de colores azules corporativos. Incluye información de servicios, perfil de la empresa, sección de preguntas frecuentes y formulario de contacto funcional.
+Sitio web profesional diseñado con una estética minimalista y paleta de colores azules corporativos. 
+Cuenta con una interfaz **Totalmente Responsive** que incluye menú hamburguesa para dispositivos móviles, animaciones suaves y una experiencia de usuario optimizada.
+Incluye información de servicios, perfil de la empresa, sección de preguntas frecuentes y formulario de contacto funcional.
 
 ## Estructura del Proyecto
 - `index.php`: La Landing Page principal.
